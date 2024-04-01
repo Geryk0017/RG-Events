@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title> RG Events management - Contact </title>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tertiary: '#371F76', //purple '#E1909A'
+            primary: '#000000', //black
+            secondary: '#FFFFFF', //white
+            button: "#08179D",
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    .img-container {
+        height: 849px;
+    }
+
+    .card {
+      animation: fade-in;
+      animation-timeline: view(600px 0px);
+    }
+
+    @keyframes fade-in {
+      from {scale: .5; opacity: 0;}
+      to {scale: 1; opacity: 1;}
+    }
+
+    
+
+    
+
+
+    
+    
+  </style>
+</head>
+
+
+<body class="font-[Inter] bg-[#F6F7FA] p-0">
+    
+    <header class="md:text-primary bg-tertiary h-24">
+        <div class="flex justify-start absolute gap-6">
+            <h1 class="font-[Parisienne] text-4xl pt-8 pl-7 text-secondary md:text-6xl md:pt-5"> <a href="index.html"> RG Events </a> </h1>
+        </div>
+        <nav class="flex justify-end p-5 text-xl ">
+            <div class="nav-links p-10 leading-10 min-h-fit left-0 top-[-100%] w-full z-10 
+                 md:bg-inherit bg-secondary md:static absolute  md:w-auto md:p-7 ">
+                <ul class="flex
+                md:flex-row flex-col items-center  md:gap-[4vw] md:leading-[0px] gap-12">
+                
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="index.html"> Home 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="contact.html"> Contact </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="location.html"> Location </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="about.html"> About us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 pt-2 transition ease-in-out delay-150">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl text-white cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div class="m-10 h-[1050px] md:h-[800px] bg-secondary shadow-2xl md:p-[50px] ">
+        
+        <div class="md:p-10 md:w-full md:h-full">
+                
+                <div class="p-5 text-5xl text-[#e8b923] font-[Parisienne]">
+                    <h1 class="md:text-8xl"> About us </h1>
+                </div>
+
+                <div class="p-5 text-[14px] md:w-[1000px] md:text-2xl">
+                    <p>"At RG Event Management, we believe in the power of exceptional experiences. With a passion for creativity and a commitment to excellence, we specialize in curating unforgettable events tailored to our clients' unique visions. From intimate gatherings to grand celebrations, we pride ourselves on our meticulous attention to detail, seamless execution, and dedication to exceeding expectations. With our experienced team by your side, you can trust us to transform your event dreams into reality, leaving lasting memories for you and your guests to cherish. Let us bring your vision to life and make your next event truly remarkable."</p>
+                </div><br>
+
+                <div class="md:absolute md:top-[200px] md:left-[1250px]">
+                    <a href="index.html"> <img src="Images/logo.png" class="p-5 md:w-[700px] md:h-[700px]"> </a>
+                </div>
+
+                
+           
+
+        </div>
+        
+        
+        
+              
+
+    </div>
+
+    
+      
+    
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+    
+        }
+</script> 
+</body>
+</html>
+
+<!-- <div class="md:flex md:p-10 md:w-full md:h-full md:bg-black">
+    <div class="md:w-1/2 md:bg-red-500 md:m-5">
+        
+
+    </div>
+
+    <div class="md:w-1/2 md:bg-red-500 md:m-5">
+
+    </div>
+</div> -->
+
+
+<!-- <div class="flex pl-5"> 
+                    <a href="https://www.facebook.com" class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="#039be5" d="M24 5A19 19 0 1 0 24 43A19 19 0 1 0 24 5Z"></path><path fill="#fff" d="M26.572,29.036h4.917l0.772-4.995h-5.69v-2.73c0-2.075,0.678-3.915,2.619-3.915h3.119v-4.359c-0.548-0.074-1.707-0.236-3.897-0.236c-4.573,0-7.254,2.415-7.254,7.917v3.323h-4.701v4.995h4.701v13.729C22.089,42.905,23.032,43,24,43c0.875,0,1.729-0.08,2.572-0.194V29.036z"></path>
+                            </svg>
+                    </a>
+                
+                    <a href="https://www.instagram.com" class="px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                            <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
+                            </svg>
+                    </a>
+                
+                    <a href="https://www.youtube.com/@PaoLUL_" class="px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
+                            </svg>
+                    </a>
+                
+                    <a href="https://www.gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
+                            </svg>
+                
+                    </a>
+                </div> -->

@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title> RG Events management - Contact </title>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tertiary: '#371F76', //purple '#E1909A'
+            primary: '#000000', //black
+            secondary: '#FFFFFF', //white
+            button: "#08179D",
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    .img-container {
+        height: 849px;
+    }
+
+    .card {
+      animation: fade-in;
+      animation-timeline: view(600px 0px);
+    }
+
+    @keyframes fade-in {
+      from {scale: .5; opacity: 0;}
+      to {scale: 1; opacity: 1;}
+    }
+
+    
+
+    
+
+
+    
+    
+  </style>
+</head>
+
+
+<body class="font-[Inter] bg-[#F6F7FA] p-0">
+    
+    <header class="md:text-primary bg-tertiary h-24">
+        <div class="flex justify-start absolute gap-6">
+            <h1 class="font-[Parisienne] text-4xl pt-8 pl-7 text-secondary md:text-6xl md:pt-5"> <a href="index.html"> RG Events </a> </h1>
+        </div>
+        <nav class="flex justify-end p-5 text-xl ">
+            <div class="nav-links p-10 leading-10 min-h-fit left-0 top-[-100%] w-full z-10 
+                 md:bg-inherit bg-secondary md:static absolute  md:w-auto md:p-7 ">
+                <ul class="flex
+                md:flex-row flex-col items-center  md:gap-[4vw] md:leading-[0px] gap-12">
+                
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="index.html"> Home 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="contact.html"> Contact </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="location.html"> Location </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="about.html"> About us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 pt-2 transition ease-in-out delay-150">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl text-white cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div class="m-10 h-[1050px] md:h-[850px] bg-secondary shadow-2xl md:p-[50px] ">
+        
+        <div class="md:p-10 md:w-full md:h-full">
+                
+                <div class="p-5 text-5xl text-[#e8b923] font-[Parisienne]">
+                    <h1 class="md:text-8xl"> Location </h1>
+                </div>
+
+                <div class="p-5 text-[14px] md:w-[700px] md:text-2xl">
+                    <p>"Our headquarters are conveniently located at SM Center Angono Rizal, providing a central hub for our event planning operations. Additionally, we offer on-site consultations and are available to coordinate events at a variety of venues, ensuring seamless execution no matter where your event takes place. Get in touch to schedule a visit or discuss your preferred event location options with our experienced team."   </p>
+                </div><br>
+
+                <div class="md:absolute md:top-[200px] md:left-[1000px]">
+                    <a href="https://www.google.com/maps/search/sm+center+angono/@14.5290646,121.1523704,16z?entry=ttu"> <img src="Images/loc.png" class="p-5 md:w-[1000px] md:h-[700px]"> </a>
+                </div>
+
+                
+           
+
+        </div>
+        
+        
+        
+              
+
+    </div>
+
+    
+      
+    
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+    
+        }
+</script> 
+</body>
+</html>
+

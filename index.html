@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title> RG Events management </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <script defer src="app.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tertiary: '#371F76', //purple '#E1909A'
+            primary: '#000000', //black
+            secondary: '#FFFFFF', //white
+            button: "#08179D",
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    .img-container {
+        height: 849px;
+    }
+
+    .card {
+      animation: fade-in;
+      transition-delay: 600ms; 
+      animation-timeline: view(600px 0px);
+    }
+
+    @keyframes fade-in {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    
+
+    
+
+
+    
+    
+  </style>
+</head>
+
+
+<body class="font-[Inter] bg-[#F6F7FA] p-0">
+    
+    <header class="md:text-primary bg-tertiary h-24">
+        <div class="flex justify-start absolute gap-6">
+            <h1 class="font-[Parisienne] text-4xl pt-8 pl-7 text-secondary md:text-6xl md:pt-5"> <a href="index.html"> RG Events </a> </h1>
+        </div>
+        <nav class="flex justify-end p-5 text-xl ">
+            <div class="nav-links p-10 leading-10 min-h-fit left-0 top-[-100%] w-full z-10 
+                 md:bg-inherit bg-secondary md:static absolute  md:w-auto md:p-7 ">
+                <ul class="flex
+                md:flex-row flex-col items-center  md:gap-[4vw] md:leading-[0px] gap-12">
+                
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="index.html"> Home 
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="contact.html"> Contact </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="location.html"> Location </a>
+                    </li>
+                    <li>
+                        <a class="nav md:text-secondary transition ease-in-out delay-150" href="about.html"> About us</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 pt-3 ">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-4xl text-white cursor-pointer md:hidden"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <div class="relative w-full h-full">
+      <!-- Image -->
+      <div class="border-0">
+      <img src="Images/33.jpg" alt="Your Image" class="md:w-full md:h-[849px] object-cover ">
+      </div>
+      <!-- Text Overlay -->
+      <div class="absolute inset-0 flex items-center justify-center ">
+        <div class="text-center text-white bg-black bg-opacity-50 p-4 ">
+          <h1 class="font-bold text-[10px] md:text-4xl">Schedule your events with us!</h1>
+          <p class="text-[10px] md:text-4xl">"Unlock unforgettable experiences and create <br> lasting memories by booking your next event <br> with us. From seamless planning to flawless execution,<br> let us bring your vision to life."</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="md:flex md:justify-center md:space-x-[200px] md:w-full md:h-[1000px] md:p-[100px]
+    pt-[100px] p-5">
+      <!-- first card -->
+      
+      <div class="card md:w-[700px] md:h-[850px] md:bg-secondary md:shadow-2xl
+        w-full h-[750px] bg-secondary">
+        <img src="Images/1.jpg" class="md:h-[500px] md:w-full md:object-cover md:p-10
+        h-[400px] w-full object-cover p-10">
+        <h1 class="md:p-10 md:font-bold md:text-4xl font-[Parisienne]
+        text-2xl font-bold pl-10 pt-0"> 
+        Wedding Events </h1>
+        <p class="md:pl-10
+        pl-10 text-[18px]"> 
+        "Elevate your special day with our tailored wedding event services, meticulously designed <br> to make your  dream celebration a reality." </p> <br><br>
+
+        <div class="md:pl-10
+        pl-10">
+          <button class="md:bg-button md:w-[250px] md:h-[50px] md:text-secondary
+          bg-button w-[150px] h-[50px] text-secondary"> Book Now!</button>
+        </div>
+
+      </div><br><br>
+
+      <!-- second card -->
+
+      <div class="card md:w-[700px] md:h-[850px] md:bg-secondary md:shadow-2xl
+        w-full h-[750px] bg-secondary">
+        <img src="Images/2.jpg" class="md:h-[500px] md:w-full md:object-cover md:p-10
+        h-[400px] w-full object-cover p-10">
+        <h1 class="md:p-10 md:font-bold md:text-4xl font-[Parisienne]
+        text-2xl font-bold pl-10 pt-0"> 
+        Debut/Birthday Party </h1>
+        <p class="md:pl-10
+        pl-10 text-[18px]"> 
+        "Embark on your journey into adulthood with a debut event crafted to perfection by our expert team. Let us transform your vision into reality, ensuring a spectacular celebration that <br> you'll cherish forever." </p> <br>
+
+        <div class="md:pl-10
+        pl-10">
+          <button class="md:bg-button md:w-[250px] md:h-[50px] md:text-secondary
+          bg-button w-[150px] h-[50px] text-secondary"> Book Now!</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="md:flex md:justify-center md:space-x-[200px] md:w-full md:h-[1000px]
+     p-5">
+      <!-- third card -->
+      
+      <div class="card md:w-[700px] md:h-[850px] md:bg-secondary md:shadow-2xl
+        w-full h-[750px] bg-secondary">
+        <img src="Images/1.jpg" class="md:h-[500px] md:w-full md:object-cover md:p-10
+        h-[400px] w-full object-cover p-10">
+        <h1 class="md:p-10 md:font-bold md:text-4xl font-[Parisienne]
+        text-2xl font-bold pl-10 pt-0"> 
+        Anniversaries </h1>
+        <p class="md:pl-10
+        pl-10 text-[18px]"> 
+        "Reignite the spark and celebrate your love story with an anniversary event that exceeds all expectations. From intimate gatherings to grand affairs, trust us to create an unforgettable experience tailored to your unique journey together." </p> <br>
+
+        <div class="md:pl-10
+        pl-10">
+          <button class="md:bg-button md:w-[250px] md:h-[50px] md:text-secondary
+          bg-button w-[150px] h-[50px] text-secondary"> Book Now!</button>
+        </div>
+
+      </div><br><br>
+
+      <!-- fourth card -->
+
+      <div class="card md:w-[700px] md:h-[850px] md:bg-secondary md:shadow-2xl
+        w-full h-[750px] bg-secondary">
+        <img src="Images/2.jpg" class="md:h-[500px] md:w-full md:object-cover md:p-10
+        h-[400px] w-full object-cover p-10">
+        <h1 class="md:p-10 md:font-bold md:text-4xl font-[Parisienne]
+        text-2xl font-bold pl-10 pt-0"> 
+        Wedding Events </h1>
+        <p class="md:pl-10
+        pl-10 text-[18px]"> 
+        
+"Elevate your triumphs and celebrate success with our tailored victory party planning services. From conceptualization to execution, trust us to create a memorable event that honors your achievements in style." </p> <br><br>
+
+        <div class="md:pl-10
+        pl-10">
+          <button class="md:bg-button md:w-[250px] md:h-[50px] md:text-secondary
+          bg-button w-[150px] h-[50px] text-secondary"> Book Now!</button>
+        </div>
+
+      </div>
+
+    </div><br><br>
+
+
+    <div class="md:flex md:justify-center md:pt-[150px] md:pb-[150px] md:border-4"> <!-- main container-->
+      <div class="w-full h-[300px] md:w-[500px] md:h-[500px] bg-secondary">
+        <img src="Images/feedback1.jpg" class="w-full h-[300px] p-5 md:w-[500px] md:h-[500px]">
+      </div> <br><br>
+
+      
+
+      <div class=""> <!-- text container-->
+
+        <div class="flex justify-center text-5xl text-[#e8b923]">
+          <h1 class="font-[Parisienne] md:text-8xl"> Mark & Denice </h1>
+        </div> <br><br>
+
+        <div class="p-5 w-full md:text-xl md:w-[700px]">
+          <p>"We had the most magical wedding day thanks to RG Events Management! From the stunning decor to the flawless coordination, every detail was meticulously planned and executed with precision. Our guests couldn't stop raving about the seamless flow of the event and the unforgettable atmosphere created by the RG team. Thank you for turning our dream wedding into a reality!"
+
+          </p>
+
+        </div>
+      </div> 
+
+    </div> <br><br><br>
+
+    <div class="card show md:ml-[550px] w-[400px] h-[750px] bg-secondary p-10 md:w-[1000px] md:shadow-2xl">
+      <div class="flex justify-center text-5xl text-[#e8b923]">
+        <h1 class="font-[Parisienne] md:text-6xl"> Interested? Get in touch with us! </h1>
+      </div> <br>
+      <form action=""><br><br>
+        <label for="name" class="text-xl"> First & Lastname: </label> <br>
+        <input type="text" name="name" class="border-2 md:w-full md:h-[50px]"> <br><br>
+
+        <label for="name" class="text-xl"> Email Address: </label> <br>
+        <input type="text" name="name" class="border-2 md:w-full md:h-[50px]"><br><br>
+
+        <label for="name" class="text-xl"> Phone Number: </label> <br>
+        <input type="text" name="name" class="border-2 md:w-full md:h-[50px]"><br><br>
+
+        <label for="name" class="text-xl"> Type of Event: </label> <br>
+        <input type="text" name="name" class="border-2 md:w-full md:h-[50px]"><br><br>
+
+        <br><br>
+        <button type="submit" class="w-[150px] h-[40px] bg-button md:w-[250px] md:h-[50px] text-secondary"> Submit </button>
+
+
+
+      </form>
+    </div> <br><br><br><br>
+
+
+    
+
+    
+    
+
+    
+    
+      
+    
+<script>
+    const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+    
+        }
+</script> 
+</body>
+</html>
